@@ -36,7 +36,7 @@
 //! [async-tungstenite]: https://github.com/sdroege/async-tungstenite
 //! [tokio-tungstenite]: https://github.com/snapview/tokio-tungstenite
 //! [ws-stream-wasm]: https://github.com/najamelan/ws_stream_wasm
-//! [examples]: https://github.com/obmarg/graphql-ws-client/tree/main/examples/examples
+//! [examples]: https://codeberg.org/obmarg/graphql-ws-client/src/branch/main/examples
 
 #![cfg_attr(docsrs, feature(doc_cfg))]
 #![warn(missing_docs)]

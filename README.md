@@ -12,9 +12,9 @@
   </p>
 
   <h4>
-    <a href="https://github.com/obmarg/graphql-ws-client/tree/main/examples/examples">Examples</a>
+    <a href="https://codeberg.org/obmarg/graphql-ws-client/src/branch/main/examples">Examples</a>
     <span> | </span>
-    <a href="https://github.com/obmarg/graphql-ws-client/blob/main/CHANGELOG.md">Changelog</a>
+    <a href="https://codeberg.org/obmarg/graphql-ws-client/src/branch/main/CHANGELOG.md">Changelog</a>
   </h4>
 </div>
 
@@ -51,7 +51,7 @@ The library offers integrations with some popular GraphQL clients with feature f
 
 The documentation is quite limited at the moment, here are some sources:
 
-1. The provided [examples](https://github.com/obmarg/graphql-ws-client/tree/main/examples/examples)
+1. The provided [examples](https://codeberg.org/obmarg/graphql-ws-client/src/branch/main/examples)
 2. The reference documentation on [docs.rs](https://docs.rs/graphql-ws-client)
 
 ## Logging

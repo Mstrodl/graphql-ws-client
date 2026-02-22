@@ -16,7 +16,7 @@ all APIs might be changed.
 ### Breaking Changes
 
 - The tungstenite feature flag has been removed in favour of version specific
-  feature flags.  Users should use the feature flag that pairs with the version
+  feature flags. Users should use the feature flag that pairs with the version
   that they need:
   - `tungstenite-0.23`
   - `tungstenite-0.24`
@@ -36,21 +36,21 @@ all APIs might be changed.
 
 ### Bug Fixes
 
-- Raised the  pin-project dependency slightly
+- Raised the pin-project dependency slightly
 - `Subscription::stop` is now drop safe - previously it's future could be
-  dropped before the send message was sent and the subscription would 
+  dropped before the send message was sent and the subscription would
   carry on until the server realised it was dead.
 
 ### Changes
 
-- Bumped the MSRV to 1.85 
+- Bumped the MSRV to 1.85
 
 ## v0.11.1 - 2024-10-29
 
 ### Bug Fixes
 
 - Fixed an infinite loop in the actor that could occur when all `Client`
-  instances are dropped and there are still ongoing operations ([#124](https://github.com/obmarg/graphql-ws-client/pull/124))
+  instances are dropped and there are still ongoing operations ([#124](https://codeberg.org/obmarg/graphql-ws-client/pulls/124))
 
 ### Contributors
 
@@ -62,7 +62,7 @@ Thanks to the people who contributed to this release:
 
 ### Changes
 
-- Updated tungstenite bounds to support 0.24 as well as 0.23. ([#121](https://github.com/obmarg/graphql-ws-client/pull/121))
+- Updated tungstenite bounds to support 0.24 as well as 0.23. ([#121](https://codeberg.org/obmarg/graphql-ws-client/pulls/121))
 
 ### Contributors
 
@@ -75,19 +75,19 @@ Thanks to the people who contributed to this release:
 ### Bug Fixes
 
 - send graphql-specific ping instead of ws ping frame
-  ([#117](https://github.com/obmarg/graphql-ws-client/pull/117))
+  ([#117](https://codeberg.org/obmarg/graphql-ws-client/pulls/117))
 
 ### Changes
 
-- Tidied up some documentation ([#114](https://github.com/obmarg/graphql-ws-client/pull/114))
-- Handled some clippy lints ([#114](https://github.com/obmarg/graphql-ws-client/pull/114))
+- Tidied up some documentation ([#114](https://codeberg.org/obmarg/graphql-ws-client/pulls/114))
+- Handled some clippy lints ([#114](https://codeberg.org/obmarg/graphql-ws-client/pulls/114))
 
 ### Bug Fixes
 
 - graphql-transport-ws pings are now responded to with graphql-tranport-ws pongs,
-  rather than websocket pongs ([#116](https://github.com/obmarg/graphql-ws-client/pull/116))
-- Keep alives now send `graphql-transport-ws` ping messages instead of websocket ping 
-  frames ([#117](https://github.com/obmarg/graphql-ws-client/pull/117))
+  rather than websocket pongs ([#116](https://codeberg.org/obmarg/graphql-ws-client/pulls/116))
+- Keep alives now send `graphql-transport-ws` ping messages instead of websocket ping
+  frames ([#117](https://codeberg.org/obmarg/graphql-ws-client/pulls/117))
 
 ### Contributors
 
@@ -102,29 +102,29 @@ Thanks to the people who contributed to this release:
 ### Bug Fixes
 
 - Fixed some compile errors when `ws_stream_wasm` was enabled and `tungstenite`
-  was not ([#111](https://github.com/obmarg/graphql-ws-client/pull/111))
+  was not ([#111](https://codeberg.org/obmarg/graphql-ws-client/pulls/111))
 
 ## v0.10.0 - 2024-06-08
 
 ### Breaking Changes
 
 - All Connection trait functions now return impl Future instead of BoxFuture
-  ([#108](https://github.com/obmarg/graphql-ws-client/pull/108))
+  ([#108](https://codeberg.org/obmarg/graphql-ws-client/pulls/108))
 - Removed the legacy API that was deprecated in v0.8.0
-  ([#81](https://github.com/obmarg/graphql-ws-client/pull/81))
+  ([#81](https://codeberg.org/obmarg/graphql-ws-client/pulls/81))
 - The deprecated `async-tungstenite` feature has been removed. Use the
   `tungstenite` feature instead, which works with `async-tungtenite`,
   `tokio-tungstenite` and any other library that provides a
   `futures::{Stream, Sink}` based tungsetenite interface.
-  ([#106](https://github.com/obmarg/graphql-ws-client/pull/106))
+  ([#106](https://codeberg.org/obmarg/graphql-ws-client/pulls/106))
 
 ### Changes
 
 - MSRV is now 1.76
-- Updated dependencies ([#100](https://github.com/obmarg/graphql-ws-client/pull/100))
+- Updated dependencies ([#100](https://codeberg.org/obmarg/graphql-ws-client/pulls/100))
   - `tungstenite` `0.23`
   - `graphql_client` `0.14`
-- Removed unused dependencies ([#105](https://github.com/obmarg/graphql-ws-client/pull/105))
+- Removed unused dependencies ([#105](https://codeberg.org/obmarg/graphql-ws-client/pulls/105))
   - `async-trait`
   - `pin-project-lite`
 
@@ -139,22 +139,22 @@ Thanks to the people who contributed to this release:
 ### Breaking Changes
 
 - The `no-logging` feature has been removed in favour of a default `logging`
-  feature ([#97](https://github.com/obmarg/graphql-ws-client/pull/97))
+  feature ([#97](https://codeberg.org/obmarg/graphql-ws-client/pulls/97))
 
 ### New Features
 
 - Added keep-alive functionality. When enabled this will send periodic pings
   when the connection appears inactive. If these pings are not replied to, the
   connection will be considered broken.
-  ([#93](https://github.com/obmarg/graphql-ws-client/pull/93),
-  [#94](https://github.com/obmarg/graphql-ws-client/pull/94),
-  [#103](https://github.com/obmarg/graphql-ws-client/pull/103))
-- Client is now Debug ([#101](https://github.com/obmarg/graphql-ws-client/pull/101))
+  ([#93](https://codeberg.org/obmarg/graphql-ws-client/pulls/93),
+  [#94](https://codeberg.org/obmarg/graphql-ws-client/pulls/94),
+  [#103](https://codeberg.org/obmarg/graphql-ws-client/pulls/103))
+- Client is now Debug ([#101](https://codeberg.org/obmarg/graphql-ws-client/pulls/101))
 
 ### Changes
 
 - simplify keep alive implementation
-- pin release-plz version ([#91](https://github.com/obmarg/graphql-ws-client/pull/91))
+- pin release-plz version ([#91](https://codeberg.org/obmarg/graphql-ws-client/pulls/91))
 
 ### Contributors
 
@@ -163,14 +163,14 @@ Thanks to the people who contributed to this release:
 - @rhishikeshj
 - @carlocorradini
 
-## [0.8.2](https://github.com/obmarg/graphql-ws-client/compare/v0.8.1...v0.8.2) - 2024-04-09
+## [0.8.2](https://codeberg.org/obmarg/graphql-ws-client/compare/v0.8.1...v0.8.2) - 2024-04-09
 
 ### Changes
 
 - `Client::subscribe` now takes `&self` instead of `&mut self`, to make sharing a
-  `Client` among threads easier ([#88](https://github.com/obmarg/graphql-ws-client/pull/88))
+  `Client` among threads easier ([#88](https://codeberg.org/obmarg/graphql-ws-client/pulls/88))
 - `Client` is now clone, again to make sharing among threads easier
-  ([#88](https://github.com/obmarg/graphql-ws-client/pull/88))
+  ([#88](https://codeberg.org/obmarg/graphql-ws-client/pulls/88))
 
 ## v0.8.1 - 2024-03-21
 

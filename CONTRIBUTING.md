@@ -1,6 +1,6 @@
 # Contributing
 
-If you want to contribute to graphql-ws-client, that's great!  There's plenty
+If you want to contribute to graphql-ws-client, that's great! There's plenty
 of improvements to make, features that still need built and probably a bug or
 two hiding in there.
 
@@ -11,7 +11,7 @@ There's a few different ways to contribute:
 
 - If you've found a bug or have an idea for a feature you'd like to implement,
   please [create an issue][NewIssue] to discuss or send a message [on
-  discord][Discord].
+  IRC][IRC] (for more IRC details see the [README][README]).
 - If you'd like to contribute to an existing issue feel free to comment on the
   issue and let us know. If anything isn't clear someone will be happy to
   explain (the project is still fairly new, and I have treated the issue
@@ -28,7 +28,7 @@ There's a few different ways to contribute:
 
 ## Getting Help
 
-If you have any questions about how to do anything or otherwise need help, please just ask.  
+If you have any questions about how to do anything or otherwise need help, please just ask.
 You can do this by:
 
 1. [Joining the discord server][Discord]
@@ -50,9 +50,9 @@ You can do this by:
 5. A maintainer will review the PR as soon as possible, and once it is approved
    will merge and make a release.
 
+[README]: ./README.md
 [COC]: ./CODE_OF_CONDUCT.md
-[Discord]: https://discord.gg/Y5xDmDP
-[Discussions]: https://github.com/obmarg/graphql-ws-client/discussions/new
-[GFI]: https://github.com/obmarg/graphql-ws-client/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
-[Milestones]: https://github.com/obmarg/graphql-ws-client/milestones
-[NewIssue]: https://github.com/obmarg/graphql-ws-client/issues/new/choose
+[IRC]: https://web.libera.chat/#cynic
+[GFI]: https://codeberg.org/obmarg/graphql-ws-client/issues?labels=1210793
+[Milestones]: https://codeberg.org/obmarg/graphql-ws-client/milestones
+[NewIssue]: https://codeberg.org/obmarg/graphql-ws-client/issues/new

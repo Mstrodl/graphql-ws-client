@@ -28,7 +28,7 @@ The library only supports subscriptions for now but will eventually support quer
 It supports the websocket libraries
 [async-tungstenite](https://github.com/sdroege/async-tungstenite),
 [tokio-tungstenite](https://github.com/snapview/tokio-tungstenite) and
-[ws-stream-wasm](https://github.com/najamelan/ws_stream_wasm), and
+[ws-stream-wasm](https://github.com/najamelan/ws_stream_wasm)
 
 ### Tungstenite Versions
 

@@ -11,6 +11,18 @@ all APIs might be changed.
 
 ## Unreleased
 
+## v0.12.1 - 2026-02-22
+
+### Bug Fixes
+
+- docs.rs build ([#150](https://codeberg.org/obmarg/graphql-ws-client/pulls/150))
+
+### Changes
+
+- switch to forgejo actions ([#149](https://codeberg.org/obmarg/graphql-ws-client/pulls/149))
+- update repository url to codeberg ([#148](https://codeberg.org/obmarg/graphql-ws-client/pulls/148))
+- point to IRC instead of discord ([#146](https://codeberg.org/obmarg/graphql-ws-client/pulls/146))
+
 ## v0.12.0 - 2026-01-11
 
 ### Breaking Changes

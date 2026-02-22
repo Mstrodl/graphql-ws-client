@@ -63,6 +63,9 @@ mod client;
 /// [1]: https://docs.rs/ws_stream/latest/ws_stream
 pub mod ws_stream_wasm;
 
+// docsrs wants to enable all the tungstenite features
+// which won't compile - so we disable this module on docsrs
+#[cfg(not(docsrs))]
 mod native;
 
 pub use client::*;

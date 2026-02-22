@@ -11,6 +11,16 @@ all APIs might be changed.
 
 ## Unreleased
 
+## v0.12.1 - 2026-02-22
+
+### Bug Fixes
+
+- docs.rs should now build ([#150](https://codeberg.org/obmarg/graphql-ws-client/pulls/150))
+
+### Changes
+
+- Migrated repository to codeberg
+
 ## v0.12.0 - 2026-01-11
 
 ### Breaking Changes

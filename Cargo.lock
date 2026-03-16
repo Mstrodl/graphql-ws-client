@@ -730,7 +730,7 @@ dependencies = [
  "cynic",
  "futures",
  "graphql-ws-client",
- "graphql_client",
+ "graphql_client 0.14.0",
  "serde",
  "tokio",
  "tokio-tungstenite 0.27.0",
@@ -951,6 +951,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "graphql-introspection-query"
+version = "0.3.0"
+source = "git+https://github.com/Mstrodl/graphql-client?branch=chore%2Fmstrodl%2Fbump-reqwest#ff937564bee1fb2bd4cbb778796ae29c48ecfeea"
+dependencies = [
+ "serde",
+]
+
+[[package]]
 name = "graphql-parser"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -976,7 +984,7 @@ dependencies = [
  "futures-sink",
  "futures-timer",
  "graphql-ws-client",
- "graphql_client",
+ "graphql_client 0.16.0",
  "log",
  "pharos",
  "pin-project",
@@ -1000,7 +1008,17 @@ version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a50cfdc7f34b7f01909d55c2dcb71d4c13cbcbb4a1605d6c8bd760d654c1144b"
 dependencies = [
- "graphql_query_derive",
+ "graphql_query_derive 0.14.0",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "graphql_client"
+version = "0.16.0"
+source = "git+https://github.com/Mstrodl/graphql-client?branch=chore%2Fmstrodl%2Fbump-reqwest#ff937564bee1fb2bd4cbb778796ae29c48ecfeea"
+dependencies = [
+ "graphql_query_derive 0.16.0",
  "serde",
  "serde_json",
 ]
@@ -1011,7 +1029,7 @@ version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5e27ed0c2cf0c0cc52c6bcf3b45c907f433015e580879d14005386251842fb0a"
 dependencies = [
- "graphql-introspection-query",
+ "graphql-introspection-query 0.2.0",
  "graphql-parser",
  "heck 0.4.1",
  "lazy_static",
@@ -1023,14 +1041,39 @@ dependencies = [
 ]
 
 [[package]]
+name = "graphql_client_codegen"
+version = "0.16.0"
+source = "git+https://github.com/Mstrodl/graphql-client?branch=chore%2Fmstrodl%2Fbump-reqwest#ff937564bee1fb2bd4cbb778796ae29c48ecfeea"
+dependencies = [
+ "graphql-introspection-query 0.3.0",
+ "graphql-parser",
+ "heck 0.4.1",
+ "proc-macro2",
+ "quote",
+ "serde",
+ "serde_json",
+ "syn 2.0.106",
+]
+
+[[package]]
 name = "graphql_query_derive"
 version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "83febfa838f898cfa73dfaa7a8eb69ff3409021ac06ee94cfb3d622f6eeb1a97"
 dependencies = [
- "graphql_client_codegen",
+ "graphql_client_codegen 0.14.0",
  "proc-macro2",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "graphql_query_derive"
+version = "0.16.0"
+source = "git+https://github.com/Mstrodl/graphql-client?branch=chore%2Fmstrodl%2Fbump-reqwest#ff937564bee1fb2bd4cbb778796ae29c48ecfeea"
+dependencies = [
+ "graphql_client_codegen 0.16.0",
+ "proc-macro2",
+ "syn 2.0.106",
 ]
 
 [[package]]
